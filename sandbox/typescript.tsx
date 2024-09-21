@@ -4,7 +4,7 @@ export default function Page() {
 
     //Example comment
     console.log("Hello world!");
-
+    helloWorldFunc();
     return;
 }
 
@@ -12,7 +12,7 @@ const PUBLIC = "PUB"
 
 const booleanTest: Boolean = true
 
-const helloWorld = () => {
+const helloWorldFunc = () => {
     booleanTest
     return "Hello world";
 }

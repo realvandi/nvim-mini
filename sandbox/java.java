@@ -6,7 +6,7 @@ public class Java {
         // Call a method
         int sum = addNumbers(5, 10);
         System.out.println("Sum: " + sum);
-                System.out.println("Will I work?");
+        System.out.println("Will I work?");
     }
 
     // A method to add two numbers

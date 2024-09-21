@@ -29,5 +29,7 @@ Note: The plugin manager that's being used in this nvim configuration is _packer
 
 
 <!--TODO-->
+-Format trigger
+
 Notes: 
 -Explain why `:h rtp` is important
