@@ -4,7 +4,7 @@ Throughout this README, any text that is typed as such in angle brackets(e.g. <E
 
 Prerequisites:
 Install nvim
-Install ripgrep(optional)
+Install ripgrep(optional) - For Telescope grep searches
 
 1. Clone this repository.
     MacOS(should work in general with Linux as well):
