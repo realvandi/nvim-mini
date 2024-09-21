@@ -23,4 +23,8 @@ return require('packer').startup(function(use)
 	-- "tag = *" Use for stability; omit to use `main` branch for the latest features
 	use({"kylechui/nvim-surround",tag = "*"})
 
+    -- Color schemes. Use :color mgz(dark mode) or :color rose-pine-dawn(light mode) to switch the color schemes.
+    -- Default is set to mgz(dark mode) in set.lua.
+    use { "rose-pine/neovim" }
+    use { 'stankovictab/mgz.nvim' }
 end )
