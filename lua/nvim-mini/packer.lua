@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
     -- To add more languages to always be installed on treesitter, navigate to the treesitter.lua file, and add the languages you will need. The list of available languages is available on treesitter's GitHub page.
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
+    
+
     -- Folke's Flash, a quick way to navigate around your code. Feel like a kangaroo!
     -- Customized configuration in flash.lua. Hotkey is "s" to go into "Flash mode", and then start typing away! 
     use {"folke/flash.nvim"}
