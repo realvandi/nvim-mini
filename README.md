@@ -27,9 +27,6 @@ Note: The plugin manager that's being used in this nvim configuration is _packer
 
     4a. To install new plugins, simply paste the installation line you've found from the plugin's repository in the `packer.lua` file, and do `:so<Enter>` followed by `:PackerSync<Enter>` to install the plugins. Check if you'll need to make an extra file to set up the plugin in the `after/plugin` directory.
 
-
 <!--TODO-->
--Format trigger
-
 Notes: 
 -Explain why `:h rtp` is important
