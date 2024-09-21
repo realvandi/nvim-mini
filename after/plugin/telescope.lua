@@ -3,7 +3,7 @@ local builtin = require('telescope.builtin')
 -- Open telescope 
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 
--- Only serach through git files
+-- Only search through git files(useful for searching through files you actually want to look for, instead of something like node_modules)
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 
 -- Open Telescope's grep search

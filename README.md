@@ -23,8 +23,8 @@ Note: The plugin manager that's being used in this nvim configuration is _packer
 
 4. Do `:PackerSync<Enter>` to see if _packer_ was successfully installed, along with all the plugins.
 
-*If you've installed a plugin and would like to customize the plugin, you can navigate to `after/plugin/[plugin name].lua`*. An example out of this repo is `after/plugin/telescope.lua`.
+*If you've installed a plugin and would like to customize/view the plugin configurations(such as remaps for the plugins), you can navigate to `after/plugin/[plugin name].lua`*. An example out of this repo is `after/plugin/telescope.lua`.
 
 <!--TODO-->
 Notes: 
-`:h rtp`
+-Explain why `:h rtp` is important
