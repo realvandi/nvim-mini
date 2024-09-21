@@ -25,5 +25,6 @@ Note: The plugin manager that's being used in this nvim configuration is _packer
 
 *If you've installed a plugin and would like to customize the plugin, you can navigate to `after/plugin/[plugin name].lua`*. An example out of this repo is `after/plugin/telescope.lua`.
 
-
-
+<!--TODO-->
+Notes: 
+`:h rtp`
