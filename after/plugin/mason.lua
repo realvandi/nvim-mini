@@ -2,13 +2,22 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
     -- Automatically install these LSPs (add more if needed)
-    ensure_installed = {},
+    ensure_installed = {
+        "ast_grep",
+        "eslint",
+        "google-java-format",
+        "jdtls",
+        "lua_ls",
+        "prettier",
+        "pyright",
+        "ts_ls",
+    },
 
     -- Automatically set up all installed LSPs with nvim-lspconfig
     handlers = { function(server_name)
         local capabilities = require('cmp_nvim_lsp').default_capabilities() -- nvim-cmp capabilities
         require('lspconfig')[server_name].setup({
-            capabilities = capabilities,  -- Automatically enable nvim-cmp completions
+            capabilities = capabilities,                                    -- Automatically enable nvim-cmp completions
             on_attach = function(client, bufnr)
                 local opts = { buffer = bufnr, remap = false }
                 -- Key mappings for LSP features
