@@ -16,6 +16,11 @@ return require('packer').startup(function(use)
 	-- Undotree(Essentially a history tree for your local file changes/saves)
 	use('mbbill/undotree')
 
-	-- Gud git. A git wrapper so awesome, it should be illegal. Made by the pope himself, tpope.
+	-- Fugitive. Gud git. A git wrapper so awesome, it should be illegal. Made by the pope himself, tpope.
 	use('tpope/vim-fugitive')
-end)
+	
+	-- Nvim surround. A must have to be able to enclose, or de-close(is that a word?) stuff quickly.
+	-- "tag = *" Use for stability; omit to use `main` branch for the latest features
+	use({"kylechui/nvim-surround",tag = "*"})
+
+end )
