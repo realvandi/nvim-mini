@@ -25,6 +25,9 @@ Note: The plugin manager that's being used in this nvim configuration is _packer
 
 *If you've installed a plugin and would like to customize/view the plugin configurations(such as remaps for the plugins), you can navigate to `after/plugin/[plugin name].lua`*. An example out of this repo is `after/plugin/telescope.lua`.
 
+    4a. To install new plugins, simply paste the installation line you've found from the plugin's repository in the `packer.lua` file, and do `:so<Enter>` followed by `:PackerSync<Enter>` to install the plugins. Check if you'll need to make an extra file to set up the plugin in the `after/plugin` directory.
+
+
 <!--TODO-->
 Notes: 
 -Explain why `:h rtp` is important
