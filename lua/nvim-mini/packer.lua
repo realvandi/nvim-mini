@@ -19,7 +19,10 @@ return require('packer').startup(function(use)
     -- To add more languages to always be installed on treesitter, navigate to the treesitter.lua file, and add the languages you will need. The list of available languages is available on treesitter's GitHub page.
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-    
+    -- Mason - Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.
+    use { "williamboman/mason.nvim" }
+    use { "williamboman/mason-lspconfig.nvim" } -- Bridges Mason with LSP config   
+    use 'neovim/nvim-lspconfig'
 
     -- Folke's Flash, a quick way to navigate around your code. Feel like a kangaroo!
     -- Customized configuration in flash.lua. Hotkey is "s" to go into "Flash mode", and then start typing away! 
