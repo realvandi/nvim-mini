@@ -41,4 +41,13 @@ return require('packer').startup(function(use)
     -- Toggle on using :NERDTree
     use { 'preservim/nerdtree' }
 
+    -- Automatically pairs your brackets, quotation marks, etc. QOL improvement.
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
 end )

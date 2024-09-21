@@ -9,6 +9,11 @@ export default function Page() {
     return (
         <div>
             Hello world
+            <>JSX Fragment</>
         </div>
     );
+}
+
+const helloWorld = () => {
+    return "Hello world";
 }
