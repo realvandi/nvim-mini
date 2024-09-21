@@ -23,8 +23,13 @@ return require('packer').startup(function(use)
 	-- "tag = *" Use for stability; omit to use `main` branch for the latest features
 	use({"kylechui/nvim-surround",tag = "*"})
 
+    -- Folke's Flash, a quick way to navigate around your code. Feel like a kangaroo!
+    -- Customized configuration in flash.lua. Hotkey is "s" to go into "Flash mode", and then start typing away! 
+    use {"folke/flash.nvim"}
+
     -- Color schemes. Use :color mgz(dark mode) or :color rose-pine-dawn(light mode) to switch the color schemes.
     -- Default is set to mgz(dark mode) in set.lua.
     use { "rose-pine/neovim" }
     use { 'stankovictab/mgz.nvim' }
+
 end )
