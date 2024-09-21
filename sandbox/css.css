@@ -1,0 +1,35 @@
+/*This is an example CSS file where you can try out various plugins that have been installed in the nvim-mini configuration.*/
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
