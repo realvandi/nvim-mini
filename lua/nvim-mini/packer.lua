@@ -33,4 +33,12 @@ return require('packer').startup(function(use)
     use { "rose-pine/neovim" }
     use { 'stankovictab/mgz.nvim' }
 
+    -- ================================================================================
+    --[OPTIONAL PLUGINS DOWN BELOW, COMMENT OUT OR DELETE TO DISABLE THEM, AND THEN :so, FOLLOWED BY :PackerSync]
+    -- ================================================================================
+
+    -- File tree explorer. QOL improvement.
+    -- Toggle on using :NERDTree
+    use { 'preservim/nerdtree' }
+
 end )
