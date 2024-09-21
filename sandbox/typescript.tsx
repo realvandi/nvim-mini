@@ -5,12 +5,14 @@ export default function Page() {
     //Example comment
     console.log("Hello world!");
     helloWorldFunc();
-    return;
+    return (
+    <div></div>
+    );
 }
 
 const PUBLIC = "PUB"
 
-const booleanTest: Boolean = true
+const booleanTest: Boolean = 5
 
 const helloWorldFunc = () => {
     booleanTest

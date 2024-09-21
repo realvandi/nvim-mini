@@ -30,11 +30,11 @@ return require('packer').startup(function(use)
     use {
         'hrsh7th/nvim-cmp',
         requires = {
-            'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
-            'hrsh7th/cmp-buffer', -- Buffer completions
-            'hrsh7th/cmp-path', -- File path completions
-            'hrsh7th/cmp-cmdline', -- Command-line completions
-            'L3MON4D3/LuaSnip', -- Snippet engine
+            'hrsh7th/cmp-nvim-lsp',     -- LSP source for nvim-cmp
+            'hrsh7th/cmp-buffer',       -- Buffer completions
+            'hrsh7th/cmp-path',         -- File path completions
+            'hrsh7th/cmp-cmdline',      -- Command-line completions
+            'L3MON4D3/LuaSnip',         -- Snippet engine
             'saadparwaiz1/cmp_luasnip', -- Snippet completions
         }
     }
@@ -74,4 +74,28 @@ return require('packer').startup(function(use)
             require("nvim-autopairs").setup {}
         end
     }
+
+    -- Autotag for Web Development
+    use({
+        'windwp/nvim-ts-autotag',
+        config = function()
+            require('nvim-ts-autotag').setup({
+                opts = {
+                    -- Defaults
+                    enable_close = true,          -- Auto close tags
+                    enable_rename = true,         -- Auto rename pairs of tags
+                    enable_close_on_slash = false -- Auto close on trailing </
+                },
+                -- Also override individual filetype configs, these take priority.
+                -- Empty by default, useful if one of the "opts" global settings
+                -- doesn't work well in a specific filetype
+                per_filetype = {
+                    ["html"] = {
+                        enable_close = false
+                    }
+                }
+            })
+        end
+    })
+
 end)
