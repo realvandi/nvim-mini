@@ -3,14 +3,6 @@ require('mason').setup()
 require('mason-lspconfig').setup({
     -- Automatically install these LSPs (add more if needed)
     ensure_installed = {
-        "ast_grep",
-        "eslint",
-        "google-java-format",
-        "jdtls",
-        "lua_ls",
-        "prettier",
-        "pyright",
-        "ts_ls",
     },
 
     -- Automatically set up all installed LSPs with nvim-lspconfig
@@ -26,6 +18,7 @@ require('mason-lspconfig').setup({
                 vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
                 vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
                 vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+                vim.keymap.set("n", "<C-k>", function() vim.lsp.buf.hover() end, opts)
             end,
         })
     end },
