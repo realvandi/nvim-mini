@@ -62,6 +62,8 @@ Here's a quick example: The remap for calling Telescope(your "file search") is "
 <leader>pv - netrw(nvim file explorer)
 <leader>e - diagnostics window
 <leader>q - location list diagnostics
+<C-h> - signature help
+<C-k> - hover(imo, use instead of signature help)
 s in normal mode - flash 
 
 That's it! That covers the most important remaps I've made in this installation. 
@@ -78,6 +80,7 @@ Basics
 - folke/Flash
 - Undotree
 - Fugitive
+- lsp_signature
 
 Optionals
 - nvim-autopair(optional)
