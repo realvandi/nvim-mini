@@ -2,12 +2,18 @@
 
 export default function Page() {
 
-    //Example comment
-    console.log("Hello world!");
-    helloWorldFunc();
-    return (
+  //TODO: Do something
+  //WARN: Warning here
+  //PERF: Performance optimized
+  //HACK: This should not be done
+  //FIX:THIS NEEDS FIX
+  //NOTE: Note here
+  //Example comment
+  console.log("Hello world!");
+  helloWorldFunc();
+  return (
     <div></div>
-    );
+  );
 }
 
 const PUBLIC = "PUB"
@@ -15,6 +21,6 @@ const PUBLIC = "PUB"
 const booleanTest: Boolean = 5
 
 const helloWorldFunc = () => {
-    booleanTest
-    return "Hello world";
+  booleanTest
+  return "Hello world";
 }

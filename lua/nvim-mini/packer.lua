@@ -24,18 +24,18 @@ return require('packer').startup(function(use)
 
   -- Mason - Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.
   use { "williamboman/mason.nvim" }
-  use { "williamboman/mason-lspconfig.nvim" }   -- Bridges Mason with LSP config
+  use { "williamboman/mason-lspconfig.nvim" } -- Bridges Mason with LSP config
 
   -- Nvim-cmp - Autocomplete - connected to LSP
   use {
     'hrsh7th/nvim-cmp',
     requires = {
-      'hrsh7th/cmp-nvim-lsp',           -- LSP source for nvim-cmp
-      'hrsh7th/cmp-buffer',             -- Buffer completions
-      'hrsh7th/cmp-path',               -- File path completions
-      'hrsh7th/cmp-cmdline',            -- Command-line completions
-      'L3MON4D3/LuaSnip',               -- Snippet engine
-      'saadparwaiz1/cmp_luasnip',       -- Snippet completions
+      'hrsh7th/cmp-nvim-lsp',     -- LSP source for nvim-cmp
+      'hrsh7th/cmp-buffer',       -- Buffer completions
+      'hrsh7th/cmp-path',         -- File path completions
+      'hrsh7th/cmp-cmdline',      -- Command-line completions
+      'L3MON4D3/LuaSnip',         -- Snippet engine
+      'saadparwaiz1/cmp_luasnip', -- Snippet completions
     }
   }
 
@@ -80,6 +80,15 @@ return require('packer').startup(function(use)
     end
   }
 
+  -- Folke's todo comments
+  use {
+    "folke/todo-comments.nvim",
+    config = function()
+      require('todo-comments').setup({})
+    end,
+    requires = { "nvim-lua/plenary.nvim" }
+  }
+
   -- Autotag for Web Development
   use({
     'windwp/nvim-ts-autotag',
@@ -87,9 +96,9 @@ return require('packer').startup(function(use)
       require('nvim-ts-autotag').setup({
         opts = {
           -- Defaults
-          enable_close = true,                    -- Auto close tags
-          enable_rename = true,                   -- Auto rename pairs of tags
-          enable_close_on_slash = false           -- Auto close on trailing </
+          enable_close = true,          -- Auto close tags
+          enable_rename = true,         -- Auto rename pairs of tags
+          enable_close_on_slash = false -- Auto close on trailing </
         },
         -- Also override individual filetype configs, these take priority.
         -- Empty by default, useful if one of the "opts" global settings
