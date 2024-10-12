@@ -83,9 +83,10 @@ Basics
 - lsp_signature
 
 Optionals
-- nvim-autopair(optional)
+- nvim-autopair
 - NERDTree
 - nvim-ts-autotag
+- Folke's TODO comments
 
 ## Plugin Recommendations
 
