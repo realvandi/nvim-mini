@@ -1,7 +1,11 @@
 local builtin = require('telescope.builtin')
 
 -- Open telescope 
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>pf', function()
+  require('telescope.builtin').find_files({
+    find_command = { "rg", "--ignore", "--hidden", "--files" }
+  })
+end, { noremap = true, silent = true })
 
 -- Only search through git files(useful for searching through files you actually want to look for, instead of something like node_modules)
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
