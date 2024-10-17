@@ -29,3 +29,7 @@ vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end, { noremap 
 
 -- Set a command for autoformat
 vim.cmd("command! Format lua vim.lsp.buf.format()")
+
+-- Remap jump table mappings to default
+vim.api.nvim_set_keymap('n', '<C-i>', '<C-i>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-o>', '<C-o>', { noremap = true })
