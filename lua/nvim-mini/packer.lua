@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
   -- Default is set to mgz(dark mode) in set.lua.
   use { "rose-pine/neovim" }
   use { 'stankovictab/mgz.nvim' }
+  use { "xero/miasma.nvim" }
 
   -- ================================================================================
   --[OPTIONAL PLUGINS DOWN BELOW, COMMENT OUT OR DELETE TO DISABLE THEM, AND THEN :so, FOLLOWED BY :PackerSync]

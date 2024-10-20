@@ -104,6 +104,7 @@ This nvim configuration only comes out of the box with 2 themes: My personal pre
 
 - rose-pine(light)
 - mgz(dark)
+- miasma(mellow)
 
 Set the color theme of the nvim configuration through 
 
