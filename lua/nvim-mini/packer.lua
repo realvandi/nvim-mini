@@ -70,7 +70,7 @@ return require('packer').startup(function(use)
 
   -- File tree explorer. QOL improvement.
   -- Toggle on using :NERDTree
-  use { 'preservim/nerdtree' }
+  -- use { 'preservim/nerdtree' }
 
   -- Automatically pairs your brackets, quotation marks, etc. QOL improvement.
   use {
