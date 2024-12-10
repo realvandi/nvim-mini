@@ -72,6 +72,19 @@ return require('packer').startup(function(use)
   -- Toggle on using :NERDTree
   -- use { 'preservim/nerdtree' }
 
+  -- File tree explorer. QOL improvement.
+  -- Toggle on suing :Neotree
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    }
+  }
+
   -- Automatically pairs your brackets, quotation marks, etc. QOL improvement.
   use {
     "windwp/nvim-autopairs",
